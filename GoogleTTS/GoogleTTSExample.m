@@ -27,11 +27,7 @@
     tts = [[GoogleTTS alloc] init];
     NSLog(@"Here");
     [tts convertTextToSpeech:@"test" withCompletion:^(NSMutableData *data) {
-        NSLog(@"Playing Speech");
-        NSString *download = [NSTemporaryDirectory() stringByAppendingPathComponent:@"Temp.mp3"];
-        [data writeToFile:download atomically:YES];
-        
-        player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:download] error:nil];
+        player = [[AVAudioPlayer alloc] initWithData:data error:nil];
         [player setDelegate:self];
         [player play];
     }];
