@@ -21,9 +21,9 @@
 		185CD60D186A2C2B00464607 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185CD5EF186A2C2B00464607 /* UIKit.framework */; };
 		185CD615186A2C2B00464607 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185CD613186A2C2B00464607 /* InfoPlist.strings */; };
 		185CD617186A2C2B00464607 /* GoogleTTSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CD616186A2C2B00464607 /* GoogleTTSTests.m */; };
-		185CD622186A2C3B00464607 /* GoogleTTS.m in Sources */ = {isa = PBXBuildFile; fileRef = 185CD621186A2C3B00464607 /* GoogleTTS.m */; };
 		185CD624186A2E3C00464607 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185CD623186A2E3C00464607 /* AVFoundation.framework */; };
 		185CD626186A337A00464607 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185CD625186A337A00464607 /* AudioToolbox.framework */; };
+		18854C65186A34E200FDB337 /* GoogleTTS.m in Sources */ = {isa = PBXBuildFile; fileRef = 18854C64186A34E200FDB337 /* GoogleTTS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		185CD612186A2C2B00464607 /* GoogleTTSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleTTSTests-Info.plist"; sourceTree = "<group>"; };
 		185CD614186A2C2B00464607 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		185CD616186A2C2B00464607 /* GoogleTTSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleTTSTests.m; sourceTree = "<group>"; };
-		185CD620186A2C3B00464607 /* GoogleTTS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleTTS.h; sourceTree = "<group>"; };
-		185CD621186A2C3B00464607 /* GoogleTTS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleTTS.m; sourceTree = "<group>"; };
 		185CD623186A2E3C00464607 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		185CD625186A337A00464607 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		18854C63186A34E200FDB337 /* GoogleTTS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleTTS.h; sourceTree = SOURCE_ROOT; };
+		18854C64186A34E200FDB337 /* GoogleTTS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleTTS.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +123,8 @@
 		185CD5F1186A2C2B00464607 /* GoogleTTS */ = {
 			isa = PBXGroup;
 			children = (
+				18854C63186A34E200FDB337 /* GoogleTTS.h */,
+				18854C64186A34E200FDB337 /* GoogleTTS.m */,
 				185CD5FA186A2C2B00464607 /* AppDelegate.h */,
 				185CD5FB186A2C2B00464607 /* AppDelegate.m */,
 				185CD5FD186A2C2B00464607 /* Main.storyboard */,
@@ -130,8 +132,6 @@
 				185CD601186A2C2B00464607 /* GoogleTTSExample.m */,
 				185CD603186A2C2B00464607 /* Images.xcassets */,
 				185CD5F2186A2C2B00464607 /* Supporting Files */,
-				185CD620186A2C3B00464607 /* GoogleTTS.h */,
-				185CD621186A2C3B00464607 /* GoogleTTS.m */,
 			);
 			path = GoogleTTS;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 			files = (
 				185CD602186A2C2B00464607 /* GoogleTTSExample.m in Sources */,
 				185CD5FC186A2C2B00464607 /* AppDelegate.m in Sources */,
-				185CD622186A2C3B00464607 /* GoogleTTS.m in Sources */,
+				18854C65186A34E200FDB337 /* GoogleTTS.m in Sources */,
 				185CD5F8186A2C2B00464607 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
